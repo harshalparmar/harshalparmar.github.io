@@ -1,0 +1,8 @@
+# Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^http://harshalparmar.github.io/[nc]
+RewriteRule ^(.*)$ http://harshalparmar.github.io//$1 [r=301,nc]
+
+RewriteCond %{HTTP_HOST} !^http://harshalparmar.github.io$ [NC]
+RewriteRule ^(.*)$ http://harshalparmar.github.io/$1 [L,R=301]
