@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /cgi-bin/
 Disallow: /assets/
-Disallow: /pages/index.php
+Disallow: /pages/index.html
